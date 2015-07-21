@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../lib/bootstrap.css"/>
+    <link rel="stylesheet" href="../assets/style.css"/>
+<title>Character Hell Brawl</title>
+</head>
+
+<body>
+
+<div id="greeting">
+    <h3>Save your score</h3>
+    <form id="greeting-form" method="post" action="/score" class="form-inline">
+        <div class="form-group">
+
+            <label for="fullName">What's your name?</label>
+            <input type="text" id="fullName" class="form-control"
+                   name="fullName" placeholder="Steve">
+
+            <label for="email">What's your email?</label>
+            <input type="email" id="email" class="form-control"
+                   name="email" placeholder="steve@email.com"  >
+
+            <input type="hidden" id="score" name="score" value="0">
+        </div>
+        <button class="btn btn-default" type="submit">OK</button>
+    </form>
+</div>
+
+<div class="container">
+<h1>Greetings traveller!</h1> Welcome to my hell...
+
+<h1>Critically acclaimed!</h1>
+<p>"10/10!" - IGN.</p>
+
+<p>"Incredible!" - Gamespot</p>
+
+<p>"A true masterpiece!" - Uncle Bob</p>
+
+<p id="gamelink">
+    <a href="example.html">Here will be the game</a>
+</p>
+
+<img src="../assets/Untitled.png" />
+
+
+   <p>Longest survival time in hell:</p>
+<ul id="scoreBoard">
+
+</ul>
+    <div id="game"> </div>
+
+
+    </div>
+<script src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../lib/phaser.min.js"></script>
+<script type="text/javascript" src="../js/flappy.js"></script>
+</body>
+
+
+
+</html>
